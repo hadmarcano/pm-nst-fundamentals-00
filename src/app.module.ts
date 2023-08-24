@@ -8,7 +8,21 @@ import { CategoriesService } from './service/categories/categories.service';
 
 @Module({
   imports: [],
-  controllers: [AppController, ProductsController, CategoriesController],
-  providers: [AppService, ProductsService, CategoriesService],
+  controllers: [
+    AppController,
+    ProductsController, // 👈
+    CategoriesController, // 👈
+    // BrandsController,  // 👈
+    // CustomerController,  // 👈
+    // UsersController,  // 👈
+  ],
+  providers: [
+    AppService,
+    ProductsService, // 👈
+    CategoriesService, // 👈
+    // BrandsService,  // 👈
+    // CustomersService,  // 👈
+    // UsersService,  // 👈
+  ],
 })
 export class AppModule {}
